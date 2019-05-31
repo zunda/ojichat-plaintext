@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+
 	"github.com/greymd/ojichat/generator"
 )
 
@@ -14,17 +15,17 @@ func main() {
 		port = "3000"
 	}
 
-  config := generator.Config{}
+	config := generator.Config{}
 
 	h := http.NewServeMux()
 	h.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-    text, err = generator.Start(config)
-    if err == nil {
-      fmt.Fprintf(w, text)
-    } else {
-      log.Error(err)
-      w.WriteHeder(http.StatusServiceUnavailable)
-    }
+		text, err := generator.Start(config)
+		if err == nil {
+			fmt.Fprintf(w, text)
+		} else {
+			log.Fatal(err)
+			http.Error(w, http.StatusText(http.StatusServiceUnavailable), http.StatusServiceUnavailable)
+		}
 	})
 
 	log.Println("Listening at port " + port)
