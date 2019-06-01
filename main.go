@@ -21,7 +21,7 @@ func main() {
 	h.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		text, err := generator.Start(config)
 		if err == nil {
-			fmt.Fprintf(w, "<html><body><p style=\"font-size:200%%\">%s</p><footer style=\"\">Inspired by <a href=\"https://reverent-shirley-368990.netlify.com/\">ojichat-web</a>, fork me on <a href=\"https://github.com/zunda/ojichat-plaintext\">GitHub</a></footer></body></html>", text)
+			fmt.Fprintf(w, "<html><body><p style=\"font-size:200%%\">%s</p><footer>Inspired by <a href=\"https://reverent-shirley-368990.netlify.com/\">ojichat-web</a>, fork me on <a href=\"https://github.com/zunda/ojichat-plaintext\">GitHub</a></footer></body></html>", text)
 		} else {
 			log.Fatal(err)
 			http.Error(w, http.StatusText(http.StatusServiceUnavailable), http.StatusServiceUnavailable)
