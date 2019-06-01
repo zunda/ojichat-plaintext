@@ -26,6 +26,6 @@ $ GOOS=js GOARCH=wasm go build -o js/ojichat.wasm js.go
 Publish the `js/` directory.
 
 ## License
-- js/index.html: Copyright 2018 The Go Authors under [BSD-style](LICENSE-go)
-- js/wasm_exec.js: Copyright 2018 The Go Authors under [BSD-style](LICENSE-go)
-- Otherwise: Copyright 2019 zunda under [MIT](LICENSE)
+- js/index.html: Copyright 2018 The Go Authors under [BSD-style license](LICENSE-go)
+- js/wasm_exec.js: Copyright 2018 The Go Authors under [BSD-style license](LICENSE-go)
+- Otherwise: Copyright 2019 zunda under [MIT license](LICENSE)
