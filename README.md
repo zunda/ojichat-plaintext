@@ -5,8 +5,8 @@ Your friendly ojisan in the cloud inspired by [ojichat-web](https://reverent-shi
 ### Local
 ```
 $ govendor sync
-$ go build -o ojichat main.go
-$ ./ojichat
+$ go install
+$ go run main.go
 ```
 
 Navigate to http://localhost:3000/
