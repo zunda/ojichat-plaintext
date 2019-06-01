@@ -1,6 +1,73 @@
 {
 	"comment": "",
 	"ignore": "test",
-	"package": [],
-	"rootPath": "ojichat-plaintext"
+	"package": [
+		{
+			"checksumSHA1": "fdJPLsHkDB9E8VG/5ls7FB9mID0=",
+			"path": "github.com/greymd/ojichat/generator",
+			"revision": "6a3215378da3c128b9372ac415f6cc74005dda73",
+			"revisionTime": "2019-05-30T18:57:37Z"
+		},
+		{
+			"checksumSHA1": "VRcu2i23K7Lmiv1/eQzMxYpdgEs=",
+			"path": "github.com/greymd/ojichat/pattern",
+			"revision": "6a3215378da3c128b9372ac415f6cc74005dda73",
+			"revisionTime": "2019-05-30T18:57:37Z"
+		},
+		{
+			"checksumSHA1": "42lbww83AU9QaNXUojQtOwdj1Gc=",
+			"path": "github.com/ikawaha/kagome/internal/da",
+			"revision": "1b1efdb6a40da0610e9b39ba305338173ac1a06d",
+			"revisionTime": "2019-05-11T09:12:12Z"
+		},
+		{
+			"checksumSHA1": "JRYhWRcC46qQzwGV7qzEL+tgkIU=",
+			"path": "github.com/ikawaha/kagome/internal/dic",
+			"revision": "1b1efdb6a40da0610e9b39ba305338173ac1a06d",
+			"revisionTime": "2019-05-11T09:12:12Z"
+		},
+		{
+			"checksumSHA1": "boZy/b+7p9PFTy3r9AlTzHmkjjk=",
+			"path": "github.com/ikawaha/kagome/internal/dic/data",
+			"revision": "1b1efdb6a40da0610e9b39ba305338173ac1a06d",
+			"revisionTime": "2019-05-11T09:12:12Z"
+		},
+		{
+			"checksumSHA1": "m47EgNOwXGwWQCCMXX5vr8K4Xx4=",
+			"path": "github.com/ikawaha/kagome/internal/lattice",
+			"revision": "1b1efdb6a40da0610e9b39ba305338173ac1a06d",
+			"revisionTime": "2019-05-11T09:12:12Z"
+		},
+		{
+			"checksumSHA1": "+wfIRj6PDpdhAlrf9CJoR/Doh5M=",
+			"path": "github.com/ikawaha/kagome/tokenizer",
+			"revision": "1b1efdb6a40da0610e9b39ba305338173ac1a06d",
+			"revisionTime": "2019-05-11T09:12:12Z"
+		},
+		{
+			"checksumSHA1": "Cq9h7eDNXXyR/qJPvO8/Rk4pmFg=",
+			"path": "github.com/jessevdk/go-assets",
+			"revision": "4f4301a06e153ff90e17793577ab6bf79f8dc5c5",
+			"revisionTime": "2016-09-21T14:41:39Z"
+		},
+		{
+			"checksumSHA1": "q8ttXuOZw/9FNKklgPzeQF2Yr+g=",
+			"path": "github.com/mattn/go-gimei",
+			"revision": "6a4b8c0a26342e6320e675615de141acdf30d7de",
+			"revisionTime": "2019-01-31T07:50:16Z"
+		},
+		{
+			"checksumSHA1": "I9EFvYyCBzxIyS8NDYouj5+DRIM=",
+			"path": "github.com/miiton/kanaconv",
+			"revision": "37b47860541be8102731e27d90f1045f0aa505f6",
+			"revisionTime": "2019-01-13T03:06:51Z"
+		},
+		{
+			"checksumSHA1": "QqDq2x8XOU7IoOR98Cx1eiV5QY8=",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "51d6538a90f86fe93ac480b35f37b2be17fef232",
+			"revisionTime": "2018-11-15T11:05:04Z"
+		}
+	],
+	"rootPath": "github.com/zunda/ojichat-plaintext"
 }
