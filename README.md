@@ -4,7 +4,9 @@ Your friendly ojisan in the cloud inspired by [ojichat-web](https://reverent-shi
 ## Running and accessing the app
 ### Local
 ```
-$ go run main.go
+$ govendor sync
+$ go build -o ojichat main.go
+$ ./ojichat
 ```
 
 Navigate to http://localhost:3000/
