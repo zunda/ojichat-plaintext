@@ -17,4 +17,4 @@ $ heroku apps:open
 ```
 
 ## License
-- Others: [MIT](LICENSE)
+[MIT](LICENSE)
