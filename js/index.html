@@ -46,15 +46,15 @@ license that can be found in the LICENSE file.
 							cl = parseInt(clone.headers.get('content-length'), 10);
 							if (cl > 0) {
 								total = cl
-								header = "おじさん頭脳(" + (total/1024/1024).toFixed() + "MiB)ダウンロード中… ";
+								header = "おじさん頭脳(" + (total/1024/1024).toFixed(1) + "MiB)ダウンロード中… ";
 							}
 						}
 
 						loaded += received.value.byteLength;
 						if (total > 0) {
-							document.getElementById("progressbox").innerText = header + (100*loaded/total).toFixed() + "%";
+							document.getElementById("progressbox").innerText = header + (100*loaded/total).toFixed(1) + "%";
 						} else {
-							document.getElementById("progressbox").innerText = header + (loaded/1024/1024).toFixed() + "MiB";
+							document.getElementById("progressbox").innerText = header + (loaded/1024/1024).toFixed(1) + "MiB";
 						}
 						received = await reader.read();
 					}
