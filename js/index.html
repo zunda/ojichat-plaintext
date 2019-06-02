@@ -33,19 +33,29 @@ license that can be found in the LICENSE file.
 			f.then(res => {
 				let clone = res.clone();
 
-console.log(clone.headers);
-console.log(clone.headers.get('content-length'));
-				const total = parseInt(clone.headers.get('content-length'), 10);
-				const header = "おじさん頭脳(" + (total/1024/1024).toFixed() + "MiB)ダウンロード中… ";
+        let total = 0;
 				let loaded = 0;
-
+				let header = "おじさん頭脳ダウンロード中… ";
 				document.getElementById("progressbox").innerText = header;
+
 				const reader = clone.body.getReader();
 				async function showProgress() {
 					let received = await reader.read();
 					while(!received.done) {
+						if (total === 0) {
+							cl = parseInt(clone.headers.get('content-length'), 10);
+							if (cl > 0) {
+								total = cl
+								header = "おじさん頭脳(" + (total/1024/1024).toFixed() + "MiB)ダウンロード中… ";
+							}
+						}
+
 						loaded += received.value.byteLength;
-						document.getElementById("progressbox").innerText = header + ((loaded / total)*100).toFixed() + "%";
+						if (total > 0) {
+							document.getElementById("progressbox").innerText = header + (100*loaded/total).toFixed() + "%";
+						} else {
+							document.getElementById("progressbox").innerText = header + (loaded/1024/1024).toFixed() + "MiB";
+						}
 						received = await reader.read();
 					}
 					document.getElementById("progressbox").innerText = "";
