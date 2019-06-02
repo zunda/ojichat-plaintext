@@ -34,6 +34,7 @@ license that can be found in the LICENSE file.
 				let clone = res.clone();
 
 console.log(clone.headers);
+console.log(clone.headers.get('content-length'));
 				const total = parseInt(clone.headers.get('content-length'), 10);
 				const header = "おじさん頭脳(" + (total/1024/1024).toFixed() + "MiB)ダウンロード中… ";
 				let loaded = 0;
@@ -44,7 +45,6 @@ console.log(clone.headers);
 					let received = await reader.read();
 					while(!received.done) {
 						loaded += received.value.byteLength;
-console.log(loaded);
 						document.getElementById("progressbox").innerText = header + ((loaded / total)*100).toFixed() + "%";
 						received = await reader.read();
 					}
