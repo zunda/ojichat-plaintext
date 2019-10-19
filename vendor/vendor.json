@@ -3,16 +3,46 @@
 	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "fdJPLsHkDB9E8VG/5ls7FB9mID0=",
+			"checksumSHA1": "N8jGrs4IP9/SDsBDenadaZ9bEHE=",
 			"path": "github.com/greymd/ojichat/generator",
-			"revision": "6a3215378da3c128b9372ac415f6cc74005dda73",
-			"revisionTime": "2019-05-30T18:57:37Z"
+			"revision": "0059c3fc51c0386a3e5bfdec42e19580d28543ef",
+			"revisionTime": "2019-07-18T07:40:15Z"
 		},
 		{
-			"checksumSHA1": "VRcu2i23K7Lmiv1/eQzMxYpdgEs=",
+			"checksumSHA1": "KlXou5QkOKVitBqWoj6tNf9V2B0=",
 			"path": "github.com/greymd/ojichat/pattern",
-			"revision": "6a3215378da3c128b9372ac415f6cc74005dda73",
-			"revisionTime": "2019-05-30T18:57:37Z"
+			"revision": "0059c3fc51c0386a3e5bfdec42e19580d28543ef",
+			"revisionTime": "2019-07-18T07:40:15Z"
+		},
+		{
+			"checksumSHA1": "dZIfHk1KeSH+Sa4dfyhP+s4lYX0=",
+			"path": "github.com/ikawaha/kagome.ipadic/internal/da",
+			"revision": "3f6b482cc3edff63aee14154199ef21929dc0327",
+			"revisionTime": "2019-06-07T15:26:58Z"
+		},
+		{
+			"checksumSHA1": "3ozfm0fU9rKh7tnOL7IUVRzC9+k=",
+			"path": "github.com/ikawaha/kagome.ipadic/internal/dic",
+			"revision": "3f6b482cc3edff63aee14154199ef21929dc0327",
+			"revisionTime": "2019-06-07T15:26:58Z"
+		},
+		{
+			"checksumSHA1": "6l8RLvtmFXAkVioEzRZ7iewCAX4=",
+			"path": "github.com/ikawaha/kagome.ipadic/internal/dic/data",
+			"revision": "3f6b482cc3edff63aee14154199ef21929dc0327",
+			"revisionTime": "2019-06-07T15:26:58Z"
+		},
+		{
+			"checksumSHA1": "jfuYxhkb4/25qvP4wGRLYnQZT2Y=",
+			"path": "github.com/ikawaha/kagome.ipadic/internal/lattice",
+			"revision": "3f6b482cc3edff63aee14154199ef21929dc0327",
+			"revisionTime": "2019-06-07T15:26:58Z"
+		},
+		{
+			"checksumSHA1": "CdL+fUne9bbgjyMYzbJpcdIz9bQ=",
+			"path": "github.com/ikawaha/kagome.ipadic/tokenizer",
+			"revision": "3f6b482cc3edff63aee14154199ef21929dc0327",
+			"revisionTime": "2019-06-07T15:26:58Z"
 		},
 		{
 			"checksumSHA1": "42lbww83AU9QaNXUojQtOwdj1Gc=",
@@ -63,10 +93,10 @@
 			"revisionTime": "2019-01-13T03:06:51Z"
 		},
 		{
-			"checksumSHA1": "QqDq2x8XOU7IoOR98Cx1eiV5QY8=",
+			"checksumSHA1": "q7pfZZieFzr0mBeX1cBubsnISPw=",
 			"path": "gopkg.in/yaml.v2",
-			"revision": "51d6538a90f86fe93ac480b35f37b2be17fef232",
-			"revisionTime": "2018-11-15T11:05:04Z"
+			"revision": "f221b8435cfb71e54062f6c6e99e9ade30b124d5",
+			"revisionTime": "2019-10-02T18:33:36Z"
 		}
 	],
 	"rootPath": "github.com/zunda/ojichat-plaintext"
