@@ -15,7 +15,7 @@ func main() {
 		port = "3000"
 	}
 
-	config := generator.Config{TargetName: "", EmojiNum: 4, PunctiuationLebel: 0}
+	config := generator.Config{TargetName: "", EmojiNum: 4, PunctiuationLevel: 0}
 
 	h := http.NewServeMux()
 	h.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
