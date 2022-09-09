@@ -18,16 +18,12 @@ $ git push heroku master
 $ heroku apps:open
 ```
 
-Runs like https://ojichat-plaintext.herokuapp.com/
-
 ## In browser
 ```
 $ GOOS=js GOARCH=wasm go build -o js/ojichat.wasm js.go
 ```
 
 Publish the `js/` directory.
-
-Runs like https://inspiring-lovelace-744dd8.netlify.com/
 
 ## License
 - js/index.html: Copyright 2018 The Go Authors under [BSD-style license](LICENSE-go)
